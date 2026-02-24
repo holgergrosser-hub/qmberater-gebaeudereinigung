@@ -512,63 +512,34 @@
     .pain-card h4 { font-family: 'DM Sans', sans-serif; font-size: 0.98rem; font-weight: 600; margin-bottom: 4px; }
     .pain-card p { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
 
-    .branch-grid-5 {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    .branch-grid-5 .branch-card:nth-child(4),
-    .branch-grid-5 .branch-card:nth-child(5) {
-      /* center the last row of 2 */
-    }
-    .branch-tag {
-      display: inline-block;
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      padding: 4px 12px;
-      border-radius: 100px;
-      background: var(--primary-soft);
-      color: var(--primary);
-      margin-bottom: 12px;
-    }
-    .branch-card:nth-child(4) .branch-tag { background: #FEE2E2; color: #DC2626; }
-    .branch-card:nth-child(5) .branch-tag { background: #d1fae5; color: #059669; }
-    .branch-card { text-align: left; }
-    .branch-card .branch-icon { margin-bottom: 8px; }
-    .branch-card p { text-align: left; }
-
-    /* center last 2 cards in 5-grid */
-    @media (min-width: 901px) {
-      .branch-grid-5 {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-      }
-      .branch-grid-5 .branch-card:nth-child(1) { grid-column: 1 / 3; }
-      .branch-grid-5 .branch-card:nth-child(2) { grid-column: 3 / 5; }
-      .branch-grid-5 .branch-card:nth-child(3) { grid-column: 5 / 7; }
-      .branch-grid-5 .branch-card:nth-child(4) { grid-column: 2 / 4; }
-      .branch-grid-5 .branch-card:nth-child(5) { grid-column: 4 / 6; }
-    }
-
     /* ── Branches ── */
     .branch-section { background: var(--surface-alt); }
-    .branch-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
+    .branch-grid-5 {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
     }
     .branch-card {
       background: #fff;
       border-radius: var(--radius-lg);
-      padding: 32px;
-      text-align: center;
+      padding: 24px;
       border: 1px solid var(--border);
       transition: all 0.35s;
+      width: calc(33.333% - 14px);
+      min-width: 280px;
     }
     .branch-card:hover { border-color: var(--primary-light); box-shadow: var(--shadow-md); transform: translateY(-3px); }
-    .branch-icon { font-size: 2.5rem; margin-bottom: 14px; display: block; }
-    .branch-card h3 { font-family: 'DM Sans', sans-serif; font-size: 1.02rem; font-weight: 700; margin-bottom: 8px; color: var(--text); }
-    .branch-card p { color: var(--text-muted); font-size: 0.86rem; line-height: 1.6; }
+    .branch-tag {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 4px 12px; border-radius: 100px; background: var(--primary-soft); color: var(--primary); margin-bottom: 8px;
+    }
+    .branch-card:nth-child(4) .branch-tag { background: #FEE2E2; color: #DC2626; }
+    .branch-card:nth-child(5) .branch-tag { background: #d1fae5; color: #059669; }
+    .branch-icon { font-size: 2rem; margin-bottom: 6px; display: block; }
+    .branch-card h3 { font-family: 'DM Sans', sans-serif; font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+    .branch-card p { color: var(--text-muted); font-size: 0.82rem; line-height: 1.55; }
 
     /* ── Process ── */
     .process-track {
@@ -865,8 +836,8 @@
   <div class="contact-bar">
     <div class="container contact-bar-inner">
       <a href="tel:+4991149522541">📞 0911-49522541</a>
-      <a href="https://wa.me/4991149522541" target="_blank" rel="noopener">💬 WhatsApp</a>
-      <a href="https://calendly.com/holger-grosser" target="_blank" rel="noopener">📅 Termin vereinbaren</a>
+      <a href="https://wa.me/+4915792316673" target="_blank" rel="noopener">💬 WhatsApp</a>
+      <a href="https://calendly.com/grosser-qmguru/termin-qm-system-iso-9001" target="_blank" rel="noopener">📅 Termin vereinbaren</a>
       <a href="mailto:holger.grosser@iso9001.info">✉️ Schreiben Sie uns</a>
     </div>
   </div>
@@ -998,31 +969,31 @@
           <span class="branch-icon">🏢</span>
           <span class="branch-tag">80% des Marktes</span>
           <h3>Unterhalts- & Glasreinigung</h3>
-          <p>Der klassische kleine Reinigungsbetrieb: Büroreinigung, Treppenhausreinigung, Glasreinigung. Standardisierte Abläufe für gleichbleibende Qualität – auch bei wechselndem Personal und verschiedenen Objekten.</p>
+          <p>Der klassische Reinigungsbetrieb: Büros, Treppenhäuser, Glasflächen. Standardisierte Abläufe für gleichbleibende Qualität.</p>
         </div>
         <div class="branch-card fade-up">
           <span class="branch-icon">🏗️</span>
           <span class="branch-tag">Full-Service</span>
           <h3>Full-Service Gebäudereinigung</h3>
-          <p>Unterhalts-, Glas-, Grund- und Sonderreinigung plus Facility Services aus einer Hand. Für mittelständische Reinigungsunternehmen, die das komplette Leistungsspektrum abdecken und bei Großaufträgen punkten wollen.</p>
+          <p>Unterhalts-, Glas-, Grund-, Sonderreinigung plus Facility Services. Für Mittelständler mit breitem Leistungsspektrum.</p>
         </div>
         <div class="branch-card fade-up">
           <span class="branch-icon">🏭</span>
           <span class="branch-tag">Eigene Zielgruppe</span>
           <h3>Industriereinigung</h3>
-          <p>Maschinen, Produktionshallen, technische Anlagen – eigene Sprache, eigene Ausschreibungen. Strenge Umwelt- und Sicherheitsanforderungen, Gefahrstoffmanagement und dokumentierte Spezialverfahren inklusive.</p>
+          <p>Produktionsanlagen, Maschinen, Industriehallen. Eigene Sprache, eigene Ausschreibungen, strenge Sicherheitsstandards.</p>
         </div>
         <div class="branch-card fade-up">
           <span class="branch-icon">🏥</span>
           <span class="branch-tag">Hochreguliert</span>
           <h3>Krankenhausreinigung & Hygiene</h3>
-          <p>Hochregulierter Bereich mit RKI-Richtlinien, strengsten Hygienestandards und Dokumentationspflichten. Für Reinigungsunternehmen in Kliniken, Pflegeheimen, Arztpraxen und Laboren.</p>
+          <p>RKI-Richtlinien, strengste Hygienestandards. Für Kliniken, Pflegeheime, Arztpraxen und Labore.</p>
         </div>
         <div class="branch-card fade-up">
           <span class="branch-icon">☀️</span>
           <span class="branch-tag">Wachstumsmarkt</span>
           <h3>Baureinigung & Solarreinigung</h3>
-          <p>Wachsender Markt mit kaum Wettbewerb bei Zertifizierern. Baufeinreinigung, Bauschlussreinigung und professionelle PV-Anlagenreinigung – ideal für Spezialisten, die sich früh positionieren wollen.</p>
+          <p>Wachsender Markt, kaum Wettbewerb bei Zertifizierern. Baufeinreinigung und PV-Anlagenreinigung.</p>
         </div>
       </div>
     </div>
