@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://qmberater.info/iso-9001-gebaeudereinigung/sitemap.xml
